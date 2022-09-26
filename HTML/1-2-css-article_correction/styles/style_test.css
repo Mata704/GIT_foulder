@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+html { 
+    font-family: 'Vollkorn', serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+
+}
+
+.midsection{ 
+    
+    width: 100%
+    margin:0 Auto;
+    max-width: 80%;
+    
+}
