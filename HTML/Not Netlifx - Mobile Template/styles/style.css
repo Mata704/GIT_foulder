@@ -1,0 +1,215 @@
+body {
+    background: black;
+    margin: 0 0 55px 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y:auto;
+    letter-spacing:1px;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+a:link { text-decoration: none; }
+
+select{
+    background: transparent;
+    border: none;
+    color:rgba(233, 229, 229, 0.945);
+    font-size: 15px;
+}
+
+option
+{
+    background: black;
+}
+
+.option1
+{
+    display: none;
+
+}
+
+
+.imageblock{
+    background-image: url("../assets/preview.png");
+    background-size:contain;
+    height: 580px;
+    background-repeat: no-repeat;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+
+.navtop {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 15px;  
+}
+.navtop a
+{
+    color:rgba(255, 255, 255, 0.945)
+}
+.navtop form
+{
+    color:rgba(255, 255, 255, 0.945)
+}
+
+.navbot {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 50px;   
+}
+
+.buttonrow
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 38px;
+}
+
+.buttoncol
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    gap:2px;
+}
+.buttoncol span
+{
+  color:white  
+}
+.buttoncol image
+{
+  size: 20px;
+}
+
+.staticnav{
+    color: white;
+    position:fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 1px;
+}
+
+.pre-navbot{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    
+}
+
+.whitespan
+{
+  color:white   
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: auto ;
+}
+
+.staticnav span{
+
+    font-size: 10px;
+    padding: 2px;
+    border: 2px;
+
+}
+
+.buttoncolstatic
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    gap: 4px;
+    outline: none;
+    border: none;
+}
+
+.buttoncolstatic span
+{
+  color:white;
+  padding: 2px;
+      
+}
+
+.buttoncolstatic img
+{
+    width: 20px;
+    
+}
+
+
+.list 
+{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px ;
+    
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.list span
+{
+    color: white;
+    font-size: 18px;
+    
+}
+
+.imagelist
+{
+    display: flex;
+    overflow-x:auto;
+    gap: 8px;
+    overflow-y: visible;
+    scrollbar-width: none;
+  
+    
+    
+
+}
+
+.imagelist img{
+    transition: all .2s ease-in-out;
+}
+
+.imagelist img:hover{
+
+    transform: scale(1.1);
+
+
+}
+
+
+
+
+
+
+
+
+
