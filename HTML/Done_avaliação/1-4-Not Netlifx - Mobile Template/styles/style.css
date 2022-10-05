@@ -59,7 +59,7 @@ a:link
 .imageblock
 {
     background-image: url("../assets/preview.png");
-    background-size:contain;
+    background-size:cover;
     height: 580px;
     background-repeat: no-repeat;
     display: flex; 
