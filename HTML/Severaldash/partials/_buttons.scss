@@ -1,0 +1,114 @@
+button
+{
+    width: 233px;
+    height: 56px;
+    color: #53545C;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: transparent;
+    border: none;
+    gap: 18px;
+    padding-left:22px;
+    font-size: 14px;
+    border-radius: 12px;
+    
+
+    & > img
+    {
+        width: 20px;
+        height: 20px;          
+    }
+
+    &:focus
+    {
+        color:#FFFFFF;
+        background: #5570F1;
+        & .notifications-circle
+        {
+            color: black;
+        }
+
+    }
+
+    &:hover
+    {
+        border: 1px solid rgba(206, 204, 204, 0.5);
+    }
+
+}
+
+.sidebar--footer--buttons--support
+{
+    background:rgba(94, 99, 102, 0.1);
+}
+
+
+.sidebar--footer--logout
+{
+    display:flex;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: red;
+}
+
+.sidebar--footer--buttons--gift
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+    background: rgba(255, 204, 145, 0.2);
+    width: 233px;
+    height: 82px;
+ 
+        &--top
+        {
+            display: flex; 
+            justify-content: flex-start;
+            align-items: center; 
+            gap: 18px; 
+
+        }
+        &--bottom
+        {
+            display: flex; 
+            justify-content: flex-start;
+            align-items: center;
+            gap:18px;
+            font-size: 12px;
+
+            & img 
+            {
+                width: 4px;
+                height: 8px;
+
+            }
+
+
+        }
+}
+
+
+.btn-notifications-user
+{
+    width: 32px;
+    height: 32px;
+    gap:0;
+    padding: 0;
+    border-radius: 2px;
+
+    & img 
+    {
+        width: 32px;
+        height: 32px;
+
+    }
+}
+
+
+
+
+
+

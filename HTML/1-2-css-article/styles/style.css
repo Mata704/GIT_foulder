@@ -1,25 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,500;1,400;1,500&display=swap');
 
-html { 
-    font-family: 'Vollkorn', serif;
+body{
+    font-family: Vollkorn;
+    width: 100%;
+    max-width: 90ch;
+    margin: 0 auto;
 }
 
-body {
+.navmenu{
+    list-style-type: none;  
     display: flex;
+    justify-content: center;
+    padding: 15px; 
+    background-color: rgb(255, 255, 255);   
+}
+
+.navmenu a {  
+    text-align: center;
+    font-size: 15px;  
+    color: rgb(128, 128, 128);
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+}
+
+.navmenu a:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.titlemenu{
+    text-align: center;
+    justify-content: center;
+}
+
+.bodyarticle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 
 }
-
-nav{
-    display: flex;
-    justify-content: center;
-
+.bodyarticle p h3 {
+    width: 80%;
 }
 
-.midsection{ 
-    
-    width: 100%
-    margin:0 Auto;
-    max-width: 80%;
-    
+a{
+    text-decoration: none;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.blackBox{
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+}
+
+.article {
+    display: flex;
+    justify-content: start;
+    align-items: flex;
+    gap: 1rem;
+  }
+
+  .divimage{
+   object-fit: contain;
+   width: 70% ;
+ }
+ 
+
+ 
+.boxImg {
+  width: 90%;
+  background-position:Center ; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }

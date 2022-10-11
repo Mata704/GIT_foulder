@@ -1,0 +1,20 @@
+.top--description
+{
+    height: 60px;
+    background: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    font-weight: 500;
+    font-size: 20px;
+    padding-left: 21px;
+    padding-right: 21px;
+    
+    &--buttons
+    {
+        display:flex;
+        align-items: center;
+        justify-content:flex-end;
+    }
+}
