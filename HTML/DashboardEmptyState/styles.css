@@ -87,7 +87,8 @@ button:focus .notifications-circle {
   color: black;
 }
 button:hover {
-  border: 1px solid rgba(206, 204, 204, 0.5);
+  border: 1px solid whitesmoke;
+  cursor: pointer;
 }
 
 .sidebar--footer--buttons--support {
@@ -139,6 +140,60 @@ button:hover {
 .btn-notifications-user img {
   width: 20px;
   height: 20px;
+}
+
+.btn-new-product {
+  width: 180px;
+  height: 44px;
+  background: #5570F1;
+  border-radius: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-new-product--img {
+  width: 14px;
+  height: 14px;
+}
+
+.notifications-circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 24px;
+  background: #FFCC91;
+  line-height: 24px;
+}
+
+.rectangle {
+  width: 13px;
+  height: 241px;
+  border-radius: 50px;
+  background: #EEF0FA;
+}
+
+.point {
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background: black;
+}
+.point--color1 {
+  background: #5570F1;
+}
+.point--color2 {
+  background: #97A5EB;
+}
+.point--color3 {
+  background: #FFCC91;
+}
+
+.blue-sqr {
+  width: 100%;
+  min-height: 208px;
+  background: #EEF0FA;
 }
 
 .container {
@@ -270,7 +325,7 @@ button:hover {
 }
 
 .sidebar {
-  width: 298px;
+  min-width: 298px;
   max-height: 100vh;
   background: #FFFFFF;
   display: flex;
@@ -280,6 +335,10 @@ button:hover {
   padding-left: 32px;
   padding-top: 18px;
   padding-bottom: 50px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  left: 0px;
 }
 .sidebar--menu--logo {
   display: flex;
@@ -294,7 +353,7 @@ button:hover {
   width: 50px;
   height: 50px;
 }
-.sidebar--menu nav {
+.sidebar--menu--nav {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -313,14 +372,6 @@ button:hover {
   justify-content: flex-start;
   align-items: center;
   gap: 18px;
-}
-
-.notifications-circle {
-  width: 24px;
-  height: 24px;
-  border-radius: 24px;
-  background: #FFCC91;
-  line-height: 24px;
 }
 
 .top--description {
@@ -347,9 +398,222 @@ button:hover {
 
 .module {
   width: 100%;
-  min-height: 170px;
+  min-height: 145px;
   margin: 8px;
-  background-color: red;
+  background-color: white;
+  padding: 15px;
+  border-radius: 12px;
+}
+.module--height {
+  min-height: 357px;
+}
+.module--flex--column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.module--flex--column--orders {
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 160px;
+}
+.module--blue {
+  background: #5570F1;
+}
+
+.card {
+  width: 100%;
+}
+.card--metrics--top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  font-size: 12px;
+  color: #BEC0CA;
+}
+.card--metrics--top--color {
+  color: white;
+}
+.card--metrics--top img {
+  width: 36px;
+  height: 36px;
+  border-radius: 5px;
+}
+.card--metrics--bottom {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 56px;
+  flex-wrap: wrap;
+}
+.card--metrics--bottom--title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #8B8D97;
+}
+.card--metrics--bottom--title--white {
+  color: white;
+}
+.card--metrics--bottom--title--red {
+  color: #CC5F5F;
+}
+.card--metrics--bottom--values {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: black;
+}
+.card--metrics--bottom--values--color {
+  color: white;
+}
+.card--metrics--bottom--values--percent {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #519C66;
+}
+.card--metrics--bottom--values--percent--color {
+  color: white;
+}
+.card--markting {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+.card--markting--top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card--markting--top > h3 {
+  font-weight: 500;
+  font-size: 16px;
+}
+.card--markting--top span {
+  font-weight: 400;
+  font-size: 12px;
+  color: #BEC0CA;
+}
+.card--markting--mid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-weight: 400;
+  font-size: 11px;
+  color: #A6A8B1;
+}
+.card--markting--mid--legend {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+.card--graph--top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card--graph--top--left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 21px;
+}
+.card--graph--top--left select {
+  background: rgba(85, 112, 241, 0.08);
+  border-radius: 8px;
+  width: 99px;
+  height: 30px;
+  color: #5570F1;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  border: none;
+}
+.card--graph--top--left h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #45464E;
+}
+.card--graph--top span {
+  font-weight: 400;
+  font-size: 12px;
+  color: #1C1D22;
+}
+.card--graph--bottom {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: right;
+  color: #BEC0CA;
+}
+.card--graph--bottom--bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+.card--graph--bottom--bars {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.card--graph--bottom--yaxis {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 37px;
+}
+.card--graph--bottom select {
+  background: rgba(85, 112, 241, 0.08);
+  border-radius: 8px;
+  width: 99px;
+  height: 30px;
+  color: #5570F1;
+}
+.card--recent_orders {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.card--recent_orders p {
+  max-width: 282px;
+  padding-bottom: 12px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #8B8D97;
+  margin-bottom: 24px;
+}
+.card--recent_orders h3 {
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+  margin-bottom: 12px;
+}
+.card--recent_orders > img {
+  width: 140px;
+  height: 140px;
+  margin-bottom: 40px;
 }
 
 body {

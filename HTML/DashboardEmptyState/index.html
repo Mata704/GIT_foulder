@@ -14,7 +14,7 @@
                 <img src="./assets/logo.png" alt="">
                 <h1>Metrix</h1>
             </div>
-            <nav>
+            <sidebar--menu--nav>
                 <button>
                     <img src="./assets/icon-dashboard.png" alt="">
                     <span>Dashboard</span>
@@ -45,9 +45,8 @@
                 <button>
                     <img src="./assets/Setting.png" alt="">
                     <span>Settings</span>
-                    <div class="notifications-circle">16</div>
                 </button>  
-            </nav>
+            </sidebar--menu--nav>
         </div>
         <div class="sidebar--footer">
 
@@ -77,8 +76,6 @@
             </button>
 
         </div>
-
-
     </div>
     <div class="block">
         <div class="top--description">
@@ -96,18 +93,85 @@
         </div>
 
         <div class="dash">
-
             <div class="container">
                 <div class="row">
                     <div class="col-4">
-                        <div class="module"></div>
+                        <div class="module module--flex--column">
+                            <div class="card card--metrics--top">
+                                <img src="./assets/icon3.png" alt="">
+                                <span>This Week</span>
+                            </div>
+                            <div class="card card--metrics--bottom">
+                                <div class="card--metrics--bottom--values">
+                                    <h6 class="card--metrics--bottom--title">Sales</h6>
+                                    <div class="">
+                                        <span>€0.00</span>
+                                        <span class="card--metrics--bottom--values--percent">+0.00%</span>
+                                    </div>
+                                </div>
+
+                                <div class="card--metrics--bottom--values">
+                                    <h6 class="card--metrics--bottom--title">Volume</h6>
+                                    <span>0</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-4">
-                        <div class="module"></div>
+                        <div class="module module--flex--column">
+                            <div class="card card--metrics--top">
+                                <img src="./assets/icon4.png" alt="">
+                                <span>This Week</span>
+                            </div>
+                            <div class="card card--metrics--bottom">
+                                <div class="card--metrics--bottom--values">
+                                    <h6 class="card--metrics--bottom--title">Customers</h6>
+                                    <div>
+                                        <span>0</span>
+                                        <span class="card--metrics--bottom--values--percent">+0.00%</span>
+                                    </div>
+                                </div>
+
+                                <div class="card--metrics--bottom--values">
+                                    <h6 class="card--metrics--bottom--title">Active</h6>
+                                    <div>
+                                        <span>0</span>
+                                        <span class="card--metrics--bottom--values--percent">+0.00%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="col-4">
-                        <div class="module"></div>
+                        <div class="module module--flex--column">
+                            <div class="card card--metrics--top">
+                                <img src="./assets/icon5.png" alt="">
+                                <span>This Week</span>
+                            </div>
+                            <div class="card card--metrics--bottom">
+                                <div class="card--metrics--bottom--values">
+                                    <h6 class="card--metrics--bottom--title">All Orders</h6>
+                                    <div>
+                                        <span>0</span>
+                                    </div>
+                                </div>
+
+                                <div class="card--metrics--bottom--values">
+                                    <h6 class="card--metrics--bottom--title">Pending</h6>
+                                    <div>
+                                        <span>0</span>
+                                    </div>
+                                </div>
+                                <div class="card--metrics--bottom--values">
+                                    <h6 class="card--metrics--bottom--title">Completed</h6>
+                                    <div>
+                                        <span>0</span>
+                                        <span class="card--metrics--bottom--values--percent">+0.00%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
@@ -115,28 +179,164 @@
                        
                         <div class="row">
                             <div class="col-6">
-                                <div class="module"></div>
+                                <div class="module module--flex--column">
+                                  
+                                    <div class="card card--markting--top">
+                                        <h3>Markting</h3>
+                                        <span>This Week</span>
+                                    </div>
+                                    <div class=" card card--markting--mid">
+                                        <div class="card--markting--mid--legend">
+                                            <div class="point point--color1"></div>
+                                            <span>Acquisition</span>
+                                        </div>
+                                        <div class="card--markting--mid--legend">
+                                            <div class="point point--color2"></div>
+                                            <span>Purchase</span>
+                                        </div>
+                                        
+                                        <div class="card--markting--mid--legend">
+                                            <div class="point point--color3"></div>
+                                            <span>Retention</span>
+                                        </div>
+                                    </div>
+                                    <div class="blue-sqr">
+                                    </div>  
+                                </div>
                             </div>
                             <div class="col-6">
                                 <div class="row">
                                     <div class="col-12">
-                                        <div class="module"></div>
+                                        <div class="module module--blue module--flex--column">
+                                            <div class="card card--color card--metrics--top card--color card--metrics--top--color">
+                                                <img src="./assets/icon_white_paste.png" alt="">
+                                                <span>This Week</span>
+                                            </div>
+                                            <div class="card card--metrics--bottom">
+                                                <div class="card--metrics--bottom--values card--metrics--bottom--values--color">
+                                                    <h6 class="card--metrics--bottom--title card--metrics--bottom--title--white">Customers</h6>
+                                                    <div>
+                                                        <span>0</span>
+                                                        <span class="card--metrics--bottom--values--percent card--metrics--bottom--values--percent--color">+0.00%</span>
+                                                    </div>
+                                                </div>
+                
+                                                <div class="card--metrics--bottom--values card--metrics--bottom--values--color">
+                                                    <h6 class="card--metrics--bottom--title card--metrics--bottom--title--white">Active</h6>
+                                                    <div>
+                                                        <span>0</span>
+                                                        <span class="card--metrics--bottom--values--percent card--metrics--bottom--values--percent--color">+0.00%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-12">
-                                        <div class="module"></div>
+                                        <div class="module module--flex--column">
+                                            <div class="card card--metrics--top">
+                                                <img src="./assets/icon-car.png" alt="">
+                                                <span>This Week</span>
+                                            </div>
+                                            <div class="card card--metrics--bottom">
+                                                <div class="card--metrics--bottom--values">
+                                                    <h6 class="card--metrics--bottom--title card--metrics--bottom--title--red">Abandoned Cart</h6>
+                                                    <div>
+                                                        <span>0%</span>
+                                                        <span class="card--metrics--bottom--values--percent">+0.00%</span>
+                                                    </div>
+                                                </div>
+                
+                                                <div class="card--metrics--bottom--values">
+                                                    <h6 class="card--metrics--bottom--title">Customers</h6>
+                                                    <span>0</span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>         
                             </div>
                             <div class="col-12">
-                                <div class="module"></div>
+                                <div class="module module--flex--column module--height">
+                                    <div class="card card--graph--top">
+                                        <div class="card--graph--top--left">
+                                            <h6>Summary</h6>
+                                            <select name="type" id="type">
+                                                <option value="">Sales</option>
+                                                <option value="">Customers</option>
+                                            </select>
+                                            
+                                        </div>
+                                        <span>Last 7 Days</span>
+
+                                    </div>
+                                    <div class="card card--graph--bottom">
+
+                                        <div class="card--graph--bottom--yaxis">
+                                            <span>100K</span>
+                                            <span>80K</span>
+                                            <span>60K</span>
+                                            <span>40K</span>
+                                            <span>20K</span>
+                                        </div>
+
+                                        <div class="card--graph--bottom--bars">
+                                            <div class="card--graph--bottom--bar">
+                                                <div class="rectangle">
+                                                </div>
+                                                <span>Sept 10</span>
+                                            </div>
+                                            <div class="card--graph--bottom--bar">
+                                                <div class="rectangle">
+                                                </div>
+                                                <span>Sept 11</span>
+                                            </div>
+                                            <div class="card--graph--bottom--bar">
+                                                <div class="rectangle">
+                                                </div>
+                                                <span>Sept 12</span>
+                                            </div>
+                                            <div class="card--graph--bottom--bar">
+                                                <div class="rectangle">
+                                                </div>
+                                                <span>Sept 13</span>
+                                            </div>
+                                            <div class="card--graph--bottom--bar">
+                                                <div class="rectangle">
+                                                </div>
+                                                <span>Sept 14</span>
+                                            </div>
+                                            <div class="card--graph--bottom--bar">
+                                                <div class="rectangle">
+                                                </div>
+                                                <span>Sept 15</span>
+                                            </div>
+                                            <div class="card--graph--bottom--bar">
+                                                <div class="rectangle">
+                                                </div>
+                                                <span>Sept 16</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>                   
                     </div>
                     
                     <div class="col-4">
-                        <div class="module"></div>
+                        <div class="module module--flex--column module--flex--column--orders">
+                            <h3>Recent Orders</h3>
+                            <div class="card--recent_orders">
+                                <img src="./assets/iconContainer.png" alt="">
+                                <h3>No Orders Yet?</h3>
+                                <p>Add products to your store and start selling to see orders here.</p>
+                                <button class="btn-new-product">
+                                    <img src="./assets/icon-plus.png" alt="" class="btn-new-product--img ">
+                                   <span>New Product</span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
-            </div>
+                </div>
                 
             </div>
         </div>   

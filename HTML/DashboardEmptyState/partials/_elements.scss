@@ -1,0 +1,46 @@
+.notifications-circle
+{
+  width: 24px;
+  height: 24px;
+  border-radius: 24px;
+  background: #FFCC91;
+  line-height: 24px;
+}
+
+.rectangle
+{
+    width: 13px;
+    height: 241px;
+    border-radius: 50px;
+    background: #EEF0FA;
+}
+
+
+.point
+{
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background:black ;
+  &--color1
+  {
+    background: #5570F1;
+  }
+  &--color2
+  {
+    background: #97A5EB;
+
+  }
+  &--color3
+  {
+    background: #FFCC91;
+
+  }
+}
+
+.blue-sqr
+{
+  width: 100%;
+  min-height: 208px;
+  background: #EEF0FA;
+}
