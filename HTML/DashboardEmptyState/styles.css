@@ -131,15 +131,23 @@ button:hover {
 }
 
 .btn-notifications-user {
-  width: 20px;
-  height: 20px;
+  width: 32px;
+  height: 32px;
   gap: 0;
   padding: 0;
   border-radius: 2px;
 }
 .btn-notifications-user img {
+  width: 32px;
+  height: 32px;
+}
+
+.btn-notifications {
   width: 20px;
   height: 20px;
+  gap: 0;
+  padding: 0;
+  border-radius: 2px;
 }
 
 .btn-new-product {
@@ -390,6 +398,7 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  gap: 22px;
 }
 
 .dash {
