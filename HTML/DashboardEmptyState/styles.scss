@@ -1,0 +1,21 @@
+@import './partials/reset';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@500&family=Roboto:wght@100&display=swap');
+@import './partials/buttons';
+@import './components/logintopbar';
+@import './components/loginform';
+
+
+
+html, body
+{
+    font-family: 'Inter', sans-serif;
+    background: #F4F5FA;
+    min-height: 100vh;
+    
+}
+
+body
+{
+    margin: 0 auto;
+}
+
