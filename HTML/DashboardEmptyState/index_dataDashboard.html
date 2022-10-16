@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_dataDashboard.css">
 </head>
 <body>
     <div class="sidebar">     
@@ -78,10 +78,10 @@
         </div>
     </div>
     <div class="block">
-        <div class="top--description">
+        <nav>
             <span>Dashboard</span>
 
-            <div class="top--description--buttons">
+            <div class="top-buttons">
                 <button class="btn-notifications">
                     <img src="./assets/Notification2.png" alt="">
                 </button>
@@ -90,7 +90,7 @@
                 </button>
 
             </div>
-        </div>
+        </nav>
 
         <div class="dash">
             <div class="container">
@@ -104,15 +104,18 @@
                             <div class="card card--metrics--bottom">
                                 <div class="card--metrics--bottom--values">
                                     <h6 class="card--metrics--bottom--title">Sales</h6>
-                                    <div class="">
-                                        <span>€0.00</span>
-                                        <span class="card--metrics--bottom--values--percent">+0.00%</span>
+                                    <div>
+                                        <span>₦4,000,000.00</span>
+                                        
                                     </div>
                                 </div>
 
                                 <div class="card--metrics--bottom--values">
                                     <h6 class="card--metrics--bottom--title">Volume</h6>
-                                    <span>0</span>
+                                    <div>
+                                        <span>450</span>
+                                        <span class="card--metrics--bottom--values--percent">+20.00%</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -127,16 +130,16 @@
                                 <div class="card--metrics--bottom--values">
                                     <h6 class="card--metrics--bottom--title">Customers</h6>
                                     <div>
-                                        <span>0</span>
-                                        <span class="card--metrics--bottom--values--percent">+0.00%</span>
+                                        <span>1,250</span>
+                                        <span class="card--metrics--bottom--values--percent">+15.80%</span>
                                     </div>
                                 </div>
 
                                 <div class="card--metrics--bottom--values">
                                     <h6 class="card--metrics--bottom--title">Active</h6>
                                     <div>
-                                        <span>0</span>
-                                        <span class="card--metrics--bottom--values--percent">+0.00%</span>
+                                        <span>1,250</span>
+                                        <span class="card--metrics--bottom--values--percent">85%</span>
                                     </div>
                                 </div>
                             </div>
@@ -153,21 +156,20 @@
                                 <div class="card--metrics--bottom--values">
                                     <h6 class="card--metrics--bottom--title">All Orders</h6>
                                     <div>
-                                        <span>0</span>
+                                        <span>450</span>
                                     </div>
                                 </div>
 
                                 <div class="card--metrics--bottom--values">
                                     <h6 class="card--metrics--bottom--title">Pending</h6>
                                     <div>
-                                        <span>0</span>
+                                        <span>5</span>
                                     </div>
                                 </div>
                                 <div class="card--metrics--bottom--values">
                                     <h6 class="card--metrics--bottom--title">Completed</h6>
                                     <div>
-                                        <span>0</span>
-                                        <span class="card--metrics--bottom--values--percent">+0.00%</span>
+                                        <span>445</span>
                                     </div>
                                 </div>
                             </div>
@@ -201,6 +203,15 @@
                                         </div>
                                     </div>
                                     <div class="blue-sqr">
+                                        <div class="blue-sqr--acquisition">
+                                            <span>25%</span>
+                                        </div>
+                                        <div class="blue-sqr--purchase"> 
+                                            <span>25%</span>
+                                        </div>
+                                        <div class="blue-sqr--retention">
+                                            <span>60%</span>
+                                        </div>
                                     </div>  
                                 </div>
                             </div>
@@ -216,16 +227,15 @@
                                                 <div class="card--metrics--bottom--values card--metrics--bottom--values--color">
                                                     <h6 class="card--metrics--bottom--title card--metrics--bottom--title--white">Customers</h6>
                                                     <div>
-                                                        <span>0</span>
-                                                        <span class="card--metrics--bottom--values--percent card--metrics--bottom--values--percent--color">+0.00%</span>
+                                                        <span>45</span>
                                                     </div>
                                                 </div>
                 
                                                 <div class="card--metrics--bottom--values card--metrics--bottom--values--color">
                                                     <h6 class="card--metrics--bottom--title card--metrics--bottom--title--white">Active</h6>
                                                     <div>
-                                                        <span>0</span>
-                                                        <span class="card--metrics--bottom--values--percent card--metrics--bottom--values--percent--color">+0.00%</span>
+                                                        <span>32</span>
+                                                        <span class="card--metrics--bottom--values--percent card--metrics--bottom--values--percent--color">+24%</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -241,14 +251,14 @@
                                                 <div class="card--metrics--bottom--values">
                                                     <h6 class="card--metrics--bottom--title card--metrics--bottom--title--red">Abandoned Cart</h6>
                                                     <div>
-                                                        <span>0%</span>
+                                                        <span>20%</span>
                                                         <span class="card--metrics--bottom--values--percent">+0.00%</span>
                                                     </div>
                                                 </div>
                 
                                                 <div class="card--metrics--bottom--values">
                                                     <h6 class="card--metrics--bottom--title">Customers</h6>
-                                                    <span>0</span>
+                                                    <span>30</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -282,36 +292,43 @@
                                         <div class="card--graph--bottom--bars">
                                             <div class="card--graph--bottom--bar">
                                                 <div class="rectangle">
+                                                    <div class="rectangle--value90"></div>
                                                 </div>
                                                 <span>Sept 10</span>
                                             </div>
                                             <div class="card--graph--bottom--bar">
                                                 <div class="rectangle">
+                                                    <div class="rectangle--value40"></div>
                                                 </div>
                                                 <span>Sept 11</span>
                                             </div>
                                             <div class="card--graph--bottom--bar">
                                                 <div class="rectangle">
+                                                    <div class="rectangle--value60"></div>
                                                 </div>
                                                 <span>Sept 12</span>
                                             </div>
                                             <div class="card--graph--bottom--bar">
                                                 <div class="rectangle">
+                                                    <div class="rectangle--value20"></div>
                                                 </div>
                                                 <span>Sept 13</span>
                                             </div>
                                             <div class="card--graph--bottom--bar">
                                                 <div class="rectangle">
+                                                    <div class="rectangle--value80"></div>
                                                 </div>
                                                 <span>Sept 14</span>
                                             </div>
                                             <div class="card--graph--bottom--bar">
                                                 <div class="rectangle">
+                                                    <div class="rectangle--value40"></div>
                                                 </div>
                                                 <span>Sept 15</span>
                                             </div>
                                             <div class="card--graph--bottom--bar">
                                                 <div class="rectangle">
+                                                    <div class="rectangle--value80"></div>
                                                 </div>
                                                 <span>Sept 16</span>
                                             </div>
@@ -323,17 +340,102 @@
                     </div>
                     
                     <div class="col-4">
-                        <div class="module module--flex--column module--flex--column--orders">
+                        <div class="module module--flex--column module--flex--column--with_orders">
                             <h3>Recent Orders</h3>
-                            <div class="card--recent_orders">
-                                <img src="./assets/iconContainer.png" alt="">
-                                <h3>No Orders Yet?</h3>
-                                <p>Add products to your store and start selling to see orders here.</p>
-                                <button class="btn-new-product">
-                                    <img src="./assets/icon-plus.png" alt="" class="btn-new-product--img ">
-                                   <span>New Product</span>
-                                </button>
+                            <div class="recent_orders">
+                                <div class="recent_orders--product">
+                                    <img src="./assets/tel1.png" alt="">
+                                    <div class="recent_orders--product--info">
+                                        <span class="recent_orders--product--info--equipment">iPhone 13</span>
+                                        <span class="recent_orders--product--info--value">₦730,000.00 x 1</span>
+                                    </div>
+                                </div >
+                                <div class=recent_orders--status>
+                                    <span class="recent_orders--status--date">12 Sept 2022</span>
+                                    <span class="recent_orders--status--status">Pending</span>
+                                </div>
                             </div>
+                            <div class="recent_orders">
+                                <div class="recent_orders--product">
+                                    <img src="./assets/tel1.png" alt="">
+                                    <div class="recent_orders--product--info">
+                                        <span class="recent_orders--product--info--equipment">iPhone 13</span>
+                                        <span class="recent_orders--product--info--value">₦730,000.00 x 1</span>
+                                    </div>
+                                </div >
+                                <div class=recent_orders--status>
+                                    <span class="recent_orders--status--date">12 Sept 2022</span>
+                                    <span class="recent_orders--status--status recent_orders--status--status--true">Completed</span>
+                                </div>
+                            </div>
+                            <div class="recent_orders">
+                                <div class="recent_orders--product">
+                                    <img src="./assets/tel1.png" alt="">
+                                    <div class="recent_orders--product--info">
+                                        <span class="recent_orders--product--info--equipment">iPhone 13</span>
+                                        <span class="recent_orders--product--info--value">₦730,000.00 x 1</span>
+                                    </div>
+                                </div >
+                                <div class=recent_orders--status>
+                                    <span class="recent_orders--status--date">12 Sept 2022</span>
+                                    <span class="recent_orders--status--status">Pending</span>
+                                </div>
+                            </div>
+                            <div class="recent_orders">
+                                <div class="recent_orders--product">
+                                    <img src="./assets/tel1.png" alt="">
+                                    <div class="recent_orders--product--info">
+                                        <span class="recent_orders--product--info--equipment">iPhone 13</span>
+                                        <span class="recent_orders--product--info--value">₦730,000.00 x 1</span>
+                                    </div>
+                                </div >
+                                <div class=recent_orders--status>
+                                    <span class="recent_orders--status--date">12 Sept 2022</span>
+                                    <span class="recent_orders--status--status recent_orders--status--status--true">Completed</span>
+                                </div>
+                            </div>
+                            <div class="recent_orders">
+                                <div class="recent_orders--product">
+                                    <img src="./assets/tel1.png" alt="">
+                                    <div class="recent_orders--product--info">
+                                        <span class="recent_orders--product--info--equipment">iPhone 13</span>
+                                        <span class="recent_orders--product--info--value">₦730,000.00 x 1</span>
+                                    </div>
+                                </div >
+                                <div class=recent_orders--status>
+                                    <span class="recent_orders--status--date">12 Sept 2022</span>
+                                    <span class="recent_orders--status--status recent_orders--status--status--true">Completed</span>
+                                </div>
+                            </div>
+                            <div class="recent_orders">
+                                <div class="recent_orders--product">
+                                    <img src="./assets/tel1.png" alt="">
+                                    <div class="recent_orders--product--info">
+                                        <span class="recent_orders--product--info--equipment">iPhone 13</span>
+                                        <span class="recent_orders--product--info--value">₦730,000.00 x 1</span>
+                                    </div>
+                                </div >
+                                <div class=recent_orders--status>
+                                    <span class="recent_orders--status--date">12 Sept 2022</span>
+                                    <span class="recent_orders--status--status recent_orders--status--status--true">Completed</span>
+                                </div>
+                            </div>
+                            <div class="recent_orders">
+                                <div class="recent_orders--product">
+                                    <img src="./assets/tel1.png" alt="">
+                                    <div class="recent_orders--product--info">
+                                        <span class="recent_orders--product--info--equipment">iPhone 13</span>
+                                        <span class="recent_orders--product--info--value">₦730,000.00 x 1</span>
+                                    </div>
+                                </div >
+                                <div class=recent_orders--status>
+                                    <span class="recent_orders--status--date">12 Sept 2022</span>
+                                    <span class="recent_orders--status--status">Pending</span>
+                                </div>
+                            </div>
+                            
+                            
+
                         </div>
                     </div>
                 </div>

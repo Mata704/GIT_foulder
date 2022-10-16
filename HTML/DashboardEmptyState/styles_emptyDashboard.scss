@@ -1,0 +1,26 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@200&family=Roboto:wght@100&display=swap');
+@import './partials/reset';
+@import './partials/buttons';
+@import './partials/elements';
+@import './partials/grid';
+@import './components/sidebar';
+@import './components/topbar';
+@import './components/dashboard';
+
+
+html, body
+{
+    font-family: 'Inter', sans-serif;
+}
+body
+{
+    display: flex;
+}
+
+.block
+{
+   background: #F4F5FA;
+   flex-grow: 1;
+   min-height: 100vh;
+}

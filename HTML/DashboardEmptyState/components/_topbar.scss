@@ -1,4 +1,4 @@
-.top--description
+nav
 {
     height: 60px;
     background: white;
@@ -10,12 +10,14 @@
     font-size: 20px;
     padding-left: 21px;
     padding-right: 21px;
-    
-    &--buttons
-    {
-        display:flex;
-        align-items: center;
-        justify-content:flex-end;
-        gap:22px
-    }
+
+}
+
+.top-buttons
+{
+    display:flex;
+    align-items: center;
+    justify-content:flex-end;
+     gap:22px
+
 }

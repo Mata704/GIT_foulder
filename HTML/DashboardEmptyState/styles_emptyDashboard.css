@@ -181,6 +181,69 @@ button:hover {
   height: 241px;
   border-radius: 50px;
   background: #EEF0FA;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.rectangle--value10 {
+  background: #5570F1;
+  border-radius: 50px;
+  width: 13px;
+  height: 10%;
+}
+.rectangle--value20 {
+  background: #5570F1;
+  border-radius: 50px;
+  width: 13px;
+  height: 20%;
+}
+.rectangle--value30 {
+  background: #5570F1;
+  border-radius: 50px;
+  width: 13px;
+  height: 30%;
+}
+.rectangle--value40 {
+  background: #5570F1;
+  border-radius: 50px;
+  width: 13px;
+  height: 40%;
+}
+.rectangle--value50 {
+  background: #5570F1;
+  border-radius: 50px;
+  width: 13px;
+  height: 50%;
+}
+.rectangle--value60 {
+  background: #5570F1;
+  border-radius: 50px;
+  width: 13px;
+  height: 60%;
+}
+.rectangle--value70 {
+  background: #5570F1;
+  border-radius: 50px;
+  width: 13px;
+  height: 70%;
+}
+.rectangle--value80 {
+  background: #5570F1;
+  border-radius: 50px;
+  width: 13px;
+  height: 80%;
+}
+.rectangle--value90 {
+  background: #5570F1;
+  border-radius: 50px;
+  width: 13px;
+  height: 90%;
+}
+.rectangle--value100 {
+  background: #5570F1;
+  border-radius: 50px;
+  width: 13px;
+  height: 100%;
 }
 
 .point {
@@ -203,6 +266,42 @@ button:hover {
   width: 100%;
   min-height: 208px;
   background: #EEF0FA;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.blue-sqr--acquisition {
+  width: 25%;
+  height: 100%;
+  text-align: right;
+  vertical-align: bottom;
+  position: relative;
+  background: #5570F1;
+}
+.blue-sqr--purchase {
+  width: 25%;
+  height: 100%;
+  text-align: right;
+  vertical-align: bottom;
+  position: relative;
+  background: #97A5EB;
+}
+.blue-sqr--retention {
+  width: 50%;
+  height: 100%;
+  text-align: right;
+  vertical-align: bottom;
+  position: relative;
+  background: #FFCC91;
+}
+.blue-sqr span {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
 }
 
 .container {
@@ -429,6 +528,11 @@ nav {
   align-items: flex-start;
   gap: 160px;
 }
+.module--flex--column--with_orders {
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 23px;
+}
 .module--blue {
   background: #5570F1;
 }
@@ -607,7 +711,7 @@ nav {
   align-items: center;
   text-align: center;
 }
-.card--recent_orders p {
+.card--recent_orders > p {
   max-width: 282px;
   padding-bottom: 12px;
   font-weight: 400;
@@ -615,7 +719,7 @@ nav {
   color: #8B8D97;
   margin-bottom: 24px;
 }
-.card--recent_orders h3 {
+.card--recent_orders > h3 {
   font-size: 20px;
   line-height: 30px;
   color: #000000;
@@ -625,6 +729,75 @@ nav {
   width: 140px;
   height: 140px;
   margin-bottom: 40px;
+}
+
+.recent_orders {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #dcdee7;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+.recent_orders--product {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.recent_orders--product > img {
+  width: 49px;
+  height: 49px;
+}
+.recent_orders--product--info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 14px;
+}
+.recent_orders--product--info--equipment {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #45464E;
+}
+.recent_orders--product--info--value {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #33343A;
+}
+.recent_orders--status {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 14px;
+}
+.recent_orders--status--date {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #A6A8B1;
+}
+.recent_orders--status--status {
+  border-radius: 8px;
+  background: rgba(245, 126, 119, 0.12);
+  width: 77px;
+  height: 19px;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  background: rgba(245, 126, 119, 0.12);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #CC5F5F;
+}
+.recent_orders--status--status--true {
+  color: #519C66;
+  background: rgba(50, 147, 111, 0.12);
 }
 
 html, body {
@@ -639,4 +812,4 @@ body {
   background: #F4F5FA;
   flex-grow: 1;
   min-height: 100vh;
-}/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles_emptyDashboard.css.map */

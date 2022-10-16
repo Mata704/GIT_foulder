@@ -15,7 +15,7 @@
 
     &--height
     {   
-        min-height: 357px; 
+        min-height: 369px; 
     }
 
     
@@ -32,6 +32,14 @@
             justify-content: flex-start;
             align-items: flex-start; 
             gap: 160px; 
+
+        }
+
+        &--with_orders
+        {
+            justify-content: flex-start;
+            align-items: flex-start; 
+            gap: 23px;
 
         }
     }
@@ -287,9 +295,6 @@
 
             }
         }
-
-
-
     }
 
     &--recent_orders
@@ -300,8 +305,9 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        
 
-        & p 
+        & > p 
         {
             max-width: 282px;
             padding-bottom: 12px;
@@ -312,15 +318,13 @@
 
         }
 
-        & h3
+        & > h3
         {
             font-size: 20px;
             line-height: 30px;
             color: #000000;
             margin-bottom:12px;
         }
-
-
 
         & > img 
         {
@@ -331,8 +335,103 @@
 
     }
 
+}
 
 
+
+.recent_orders
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #dcdee7;
+    padding:10px;
+    flex-wrap: wrap;
+    
+
+    &--product
+    {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        & > img 
+        {
+            width: 49px;
+            height: 49px;
+        }
+
+        &--info
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap:14px;
+
+            &--equipment
+            {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #45464E;
+            }
+
+            &--value
+            {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                color: #33343A;
+            }
+        }
+    }
+
+    &--status
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap:14px;
+
+        &--date
+        {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px; 
+            color: #A6A8B1; 
+
+        }
+        
+        &--status
+        {
+            border-radius: 8px;
+            background: rgba(245, 126, 119, 0.12);
+            width: 77px;
+            height: 19px;
+            text-align: center;
+            padding-left:5px;
+            padding-right:5px;
+            background: rgba(245, 126, 119, 0.12); 
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px; 
+            color: #CC5F5F;
+
+            &--true
+            {
+                color: #519C66;
+                background: rgba(50, 147, 111, 0.12);
+            }
+
+        }
+    }
 
 }
+
+
+
+
 
