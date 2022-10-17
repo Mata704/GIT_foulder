@@ -67,6 +67,50 @@
 }
 
 
+@media All and (max-width: 768px) 
+{
+
+
+    .sidebar
+    {
+        min-width: 88px;
+        padding-left: 0;
+        align-items: center;
+
+        & span
+        {
+            display:none;
+        }
+
+        & h1
+        {
+            display:none;
+        }
+
+        & button
+        {
+            width: 56px;
+            height: 56px;
+            justify-content: center;
+            padding: 0;
+            position:relative;
+        }
+
+        &--menu
+        {
+            &--logo
+            {
+                justify-content:center;
+                 gap: 0;
+
+            }
+        }
+    
+    }
+
+}
+
+
 
 
 

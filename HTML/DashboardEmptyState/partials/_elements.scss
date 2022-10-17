@@ -1,18 +1,13 @@
+@import './colors';
+@import './mixins';
+
 .notifications-circle
 {
   width: 24px;
   height: 24px;
   border-radius: 24px;
-  background: #FFCC91;
+  background: map-get($map: $secondary, $key:"100");
   line-height: 24px;
-}
-
-@mixin rectangle-pre($percent) 
-{
-background: #5570F1;
-border-radius: 50px;
-width: 13px;
-height:$percent;
 }
 
 .rectangle
@@ -20,7 +15,7 @@ height:$percent;
   width: 13px;
   height: 241px;
   border-radius: 50px;
-  background: #EEF0FA;
+  background: $blue_sqr;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -63,38 +58,26 @@ height:$percent;
   width: 8px;
   height: 8px;
   border-radius: 8px;
-  background:black ;
+  background: map-get($map: $black, $key:"100");
   &--color1
   {
-    background: #5570F1;
+    background:map-get($map: $primary, $key:"100");
   }
   &--color2
   {
-    background: #97A5EB;
-
+    background:map-get($map: $primary, $key:"50");
   }
   &--color3
   {
-    background: #FFCC91;
-
+    background:map-get($map: $secondary, $key:"100");
   }
-}
-
-
-@mixin markting-percent($percent) 
-{
-width:$percent;
-height: 100%;
-text-align: right;
-vertical-align: bottom;
-position:relative;
 }
 
 .blue-sqr
 {
   width: 100%;
   min-height: 208px;
-  background: #EEF0FA;
+  background: $blue_sqr;
   display:flex;
   justify-content: center;
   align-items: flex-start;
@@ -102,19 +85,19 @@ position:relative;
   &--acquisition
   {
     @include markting-percent(25%);
-    background: #5570F1;
+    background: map-get($map: $primary, $key:"100");
   }
 
   &--purchase
   {
     @include markting-percent(25%);
-    background: #97A5EB;
+    background:map-get($map: $primary, $key:"50");
   }
 
   &--retention
   {
     @include markting-percent(50%);
-    background: #FFCC91;
+    background:map-get($map: $secondary, $key:"100");
   }
  
   & span
@@ -125,7 +108,22 @@ position:relative;
     font-weight: 600;
     font-size: 11px;
     line-height: 13px;
-    color: #000000;
+    color: map-get($map: $black, $key:"100");
+  }
+
+}
+
+
+
+
+@media All and (max-width: 768px) 
+{
+
+  .notifications-circle
+  {
+    position: absolute;
+    top: 3px;
+    right:0px;
   }
 
 }

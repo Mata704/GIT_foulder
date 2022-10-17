@@ -1,8 +1,9 @@
+@import './colors';
 button
 {
     width: 233px;
     height: 56px;
-    color: #53545C;
+    color: map-get($map: $black, $key:"50");
     display:flex;
     justify-content: flex-start;
     align-items: center;
@@ -21,18 +22,18 @@ button
 
     &:focus
     {
-        color:#FFFFFF;
-        background: #5570F1;
+        color:$white;
+        background: map-get($map: $primary, $key:"100");
         & .notifications-circle
         {
-            color: black;
+            color: map-get($map: $black, $key:"100");
         }
 
     }
 
     &:hover
     {
-        border: 1px solid whitesmoke;
+        border: 1px solid $stroke;
         cursor:pointer;
     }
 
@@ -40,7 +41,8 @@ button
 
 .sidebar--footer--buttons--support
 {
-    background:rgba(94, 99, 102, 0.1);
+    background:$support;
+
 }
 
 
@@ -50,7 +52,7 @@ button
     display:flex;
     justify-content: flex-start;
     align-items: center;
-    color: red;
+    color:$logout;
 }
 
 .sidebar--footer--buttons--gift
@@ -59,7 +61,7 @@ button
     flex-direction: column;
     justify-content: center;
     align-items: flex-start; 
-    background: rgba(255, 204, 145, 0.2);
+    background: $gift;
     width: 233px;
     height: 82px;
  
@@ -116,16 +118,17 @@ button
 
 .btn-new-product
 {
-    width: 180px;
+    width: 150px;
     height: 44px;
-    background: #5570F1;
+    background:map-get($map: $primary, $key:"100");
     border-radius: 12px;
     font-weight: 400;
     font-size: 16px;
-    color: #FFFFFF;
+    color: $white;
     display:flex;
     justify-content: center;
     align-items: center;
+    padding-left: 0;
 
     &--img 
     {
@@ -143,12 +146,12 @@ button
     align-items: center;
     width: 180px;
     height: 58px;
-    background: #5570F1;
+    background: map-get($map: $primary, $key:"100");
     border-radius: 12px;
     padding: 0;
     & > p
     {
-        color: #FFFFFF;
+        color: $white;
         font-weight: 400;
         font-size: 20px;
         line-height: 24px;
@@ -164,6 +167,52 @@ button
     height: 20px;
     border:none;
     padding: 0;
+}
+
+
+@media All and (max-width: 768px) 
+{
+    button
+    {
+        gap:0;
+    }
+    .sidebar--footer--buttons--gift
+    {
+
+        align-items: center; 
+        justify-content: center;
+     
+            &--top
+            {
+               
+                justify-content: center;
+                align-items: center; 
+                gap: 0px;
+                
+                 
+            }
+            &--bottom
+            {
+                justify-content: center;
+                align-items: center; 
+                gap: 0px;
+                
+             
+                & img 
+                {
+                    display: none;
+                    align-items: center; 
+    
+                }
+            }
+    }
+
+    .btn-new-product
+    {
+        gap:18px;
+
+    }
+        
 }
 
 
