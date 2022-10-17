@@ -135,6 +135,38 @@ button
 }
 
 
+.btn-login-submit
+{
+    
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 180px;
+    height: 58px;
+    background: #5570F1;
+    border-radius: 12px;
+    padding: 0;
+    & > p
+    {
+        color: #FFFFFF;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    
+}
+
+
+.btn-login-showpass
+ {
+    background: none;
+    width:20px;
+    height: 20px;
+    border:none;
+    padding: 0;
+}
+
+
 
 
 

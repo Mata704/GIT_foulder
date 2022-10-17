@@ -169,6 +169,31 @@ button:hover {
   height: 14px;
 }
 
+.btn-login-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 58px;
+  background: #5570F1;
+  border-radius: 12px;
+  padding: 0;
+}
+.btn-login-submit > p {
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.btn-login-showpass {
+  background: none;
+  width: 20px;
+  height: 20px;
+  border: none;
+  padding: 0;
+}
+
 .text-white {
   color: #FFFFFF;
 }
@@ -757,24 +782,8 @@ main h3 {
   font-size: 20px;
   line-height: 30px;
   text-align: center;
-  color: #000000;
+  color: #1C1D22;
   font-family: "Poppins", sans-serif;
-}
-main > button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 180px;
-  height: 58px;
-  background: #5570F1;
-  border-radius: 12px;
-  padding: 0;
-}
-main > button > p {
-  color: #FFFFFF;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
 }
 
 form {
@@ -783,45 +792,6 @@ form {
   align-items: flex-start;
   width: 100%;
   gap: 10px;
-}
-
-.formulario_showpass {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 52px;
-  border-radius: 8px;
-  background: rgba(239, 241, 249, 0.6);
-  padding-right: 18px;
-}
-.formulario_showpass button {
-  background: none;
-  width: 20px;
-  height: 20px;
-  border: none;
-  padding: 0;
-}
-
-.formulario {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  background: rgba(239, 241, 249, 0.6);
-  width: 100%;
-  height: 52px;
-  border-radius: 8px;
-  gap: 10px;
-  padding-left: 18px;
-}
-.formulario img {
-  width: 20px;
-  height: 18px;
-}
-.formulario input {
-  border: none;
-  background: rgba(239, 241, 249, 0.6);
-  width: 100%;
 }
 
 .recover_pass {
@@ -834,9 +804,170 @@ form {
 .recover_pass a {
   color: #5570F1;
 }
+.recover_pass--formulario {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: rgba(239, 241, 249, 0.6);
+  width: 100%;
+  height: 52px;
+  border-radius: 8px;
+  gap: 10px;
+  padding-left: 18px;
+}
+.recover_pass--formulario img {
+  width: 20px;
+  height: 18px;
+}
+.recover_pass--formulario input {
+  border: none;
+  background: rgba(239, 241, 249, 0.6);
+  width: 100%;
+}
+.recover_pass--formulario_showpass {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 52px;
+  border-radius: 8px;
+  background: rgba(239, 241, 249, 0.6);
+  padding-right: 18px;
+}
 
 .link {
   color: #5570F1;
+}
+
+button {
+  width: 233px;
+  height: 56px;
+  color: #53545C;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: transparent;
+  border: none;
+  gap: 18px;
+  padding-left: 22px;
+  font-size: 14px;
+  border-radius: 12px;
+}
+button > img {
+  width: 20px;
+  height: 20px;
+}
+button:focus {
+  color: #FFFFFF;
+  background: #5570F1;
+}
+button:focus .notifications-circle {
+  color: black;
+}
+button:hover {
+  border: 1px solid whitesmoke;
+  cursor: pointer;
+}
+
+.sidebar--footer--buttons--support {
+  background: rgba(94, 99, 102, 0.1);
+}
+
+.sidebar--footer--logout {
+  display: flex;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: red;
+}
+
+.sidebar--footer--buttons--gift {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: rgba(255, 204, 145, 0.2);
+  width: 233px;
+  height: 82px;
+}
+.sidebar--footer--buttons--gift--top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 18px;
+}
+.sidebar--footer--buttons--gift--bottom {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 18px;
+  font-size: 12px;
+}
+.sidebar--footer--buttons--gift--bottom img {
+  width: 4px;
+  height: 8px;
+}
+
+.btn-notifications-user {
+  width: 32px;
+  height: 32px;
+  gap: 0;
+  padding: 0;
+  border-radius: 2px;
+}
+.btn-notifications-user img {
+  width: 32px;
+  height: 32px;
+}
+
+.btn-notifications {
+  width: 20px;
+  height: 20px;
+  gap: 0;
+  padding: 0;
+  border-radius: 2px;
+}
+
+.btn-new-product {
+  width: 180px;
+  height: 44px;
+  background: #5570F1;
+  border-radius: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-new-product--img {
+  width: 14px;
+  height: 14px;
+}
+
+.btn-login-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 58px;
+  background: #5570F1;
+  border-radius: 12px;
+  padding: 0;
+}
+.btn-login-submit > p {
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.btn-login-showpass {
+  background: none;
+  width: 20px;
+  height: 20px;
+  border: none;
+  padding: 0;
 }
 
 html, body {
