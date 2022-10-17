@@ -1,8 +1,9 @@
+@import '../partials/colors';
 .sidebar
 {
     min-width: 298px;
     max-height: 100vh;
-    background: #FFFFFF;
+    background: $white;
     display:flex;
     flex-direction: column;
     justify-content:space-between;

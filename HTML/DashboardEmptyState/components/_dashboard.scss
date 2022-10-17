@@ -1,3 +1,4 @@
+@import '../partials/colors';
 .dash
 {
     width: 100%; 
@@ -9,7 +10,7 @@
     width: 100%;
     min-height: 145px;
     margin:8px;
-    background-color: white;
+    background-color: $white;
     padding: 15px;
     border-radius: 12px;
 
@@ -46,7 +47,7 @@
 
     &--blue
     {
-        background: #5570F1;
+        background: map-get($map: $primary, $key:"100");
     }
 
 }
@@ -66,10 +67,10 @@
             align-items: center;
             font-weight: 400;
             font-size: 12px;
-            color: #BEC0CA;
+            color: map-get($map: $black, $key:"10");
             &--color
             {
-                color:white;
+                color:$white;
             }
             & img
             {
@@ -92,16 +93,16 @@
                 font-weight: 400;
                 font-size: 14px;
                 line-height: 17px;
-                color: #8B8D97;
+                color: map-get($map: $black, $key:"30");
 
                 &--white
                 {
-                    color:white;
+                    color:$white;
                 }
 
                 &--red
                 {
-                    color: #CC5F5F;
+                    color: $warning;
 
                 }
             }
@@ -116,11 +117,11 @@
                 font-weight: 500;
                 font-size: 20px;
                 line-height: 30px;
-                color:black;
+                color:map-get($map: $black, $key:"100");
 
                 &--color
                 {
-                    color:white;
+                    color:$white;
                 }
 
                 
@@ -130,10 +131,10 @@
                     font-weight: 400;
                     font-size: 12px;
                     line-height: 15px;
-                    color: #519C66;
+                    color: $success;
                     &--color
                     {
-                        color:white;
+                        color:$white;
                     }
                 }
             }
@@ -170,8 +171,7 @@
             {
                 font-weight: 400;
                 font-size: 12px;
-                
-                color: #BEC0CA;
+                color:map-get($map: $black, $key:"10");
             }
         }
 
@@ -183,7 +183,7 @@
             flex-wrap: wrap;
             font-weight: 400;
             font-size: 11px;
-            color: #A6A8B1;
+            color: map-get($map: $black, $key:"20");
 
             &--legend
             {
@@ -213,11 +213,11 @@
                 
                 & select 
                 {
-                    background: rgba(85, 112, 241, 0.08);
+                    background:$select;
                     border-radius: 8px;
                     width: 99px;
                     height: 30px;
-                    color: #5570F1;
+                    color: map-get($map: $primary, $key:"100");
                     font-weight: 400;
                     font-size: 14px;
                     line-height: 17px;
@@ -230,7 +230,8 @@
                     font-weight: 500;
                     font-size: 16px;
                     line-height: 19px;
-                    color: #45464E;
+                    color:map-get($map: $black, $key:"60");
+
                 }
 
             }
@@ -238,7 +239,7 @@
             {
                 font-weight: 400;
                 font-size: 12px;
-                color: #1C1D22;
+                color: map-get($map: $black, $key:"60");
 
             }
         }
@@ -254,7 +255,7 @@
             font-size: 11px;
             line-height: 13px;
             text-align: right;
-            color: #BEC0CA;
+            color: map-get($map: $black, $key:"10");
 
 
             &--bar
@@ -287,12 +288,11 @@
 
             & select 
             {
-                background: rgba(85, 112, 241, 0.08);
+                background: $select;
                 border-radius: 8px;
                 width: 99px;
                 height: 30px;
-                color: #5570F1;
-
+                color: map-get($map: $primary, $key:"100");
             }
         }
     }
@@ -313,7 +313,7 @@
             padding-bottom: 12px;
             font-weight: 400;
             font-size: 14px;
-            color: #8B8D97;
+            color: map-get($map: $black, $key:"30");
             margin-bottom: 24px;
 
         }
@@ -322,7 +322,7 @@
         {
             font-size: 20px;
             line-height: 30px;
-            color: #000000;
+            color:map-get($map: $black, $key:"100");
             margin-bottom:12px;
         }
 
@@ -343,7 +343,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    border-bottom: 1px solid #dcdee7;
+    border-bottom: 1px solid $stroke;
     padding:10px;
     flex-wrap: wrap;
     
@@ -372,8 +372,8 @@
             {
                 font-weight: 400;
                 font-size: 14px;
-                line-height: 17px;
-                color: #45464E;
+                line-height: 17px;  
+                color:map-get($map: $black, $key:"60");
             }
 
             &--value
@@ -381,7 +381,7 @@
                 font-weight: 500;
                 font-size: 14px;
                 line-height: 17px;
-                color: #33343A;
+                color:map-get($map: $black, $key:"80");
             }
         }
     }
@@ -399,29 +399,28 @@
             font-weight: 400;
             font-size: 12px;
             line-height: 15px; 
-            color: #A6A8B1; 
+            color: map-get($map: $black, $key:"20"); 
 
         }
         
         &--status
         {
             border-radius: 8px;
-            background: rgba(245, 126, 119, 0.12);
+            background: $stat_background;
             width: 77px;
             height: 19px;
             text-align: center;
             padding-left:5px;
             padding-right:5px;
-            background: rgba(245, 126, 119, 0.12); 
             font-weight: 400;
             font-size: 12px;
             line-height: 15px; 
-            color: #CC5F5F;
+            color: $warning;
 
             &--true
             {
-                color: #519C66;
-                background: rgba(50, 147, 111, 0.12);
+                color: $success;
+                background:$stat_background_success;
             }
 
         }
