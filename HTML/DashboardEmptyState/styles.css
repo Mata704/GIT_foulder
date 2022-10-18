@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@500&family=Roboto:wght@100&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@500&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@100&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -778,6 +777,11 @@ nav img {
   height: 44px;
 }
 
+@media All and (max-width: 768px) {
+  nav {
+    padding-left: 30px;
+  }
+}
 .text-white {
   color: #FFFFFF;
 }
@@ -1082,7 +1086,6 @@ main h3 {
   line-height: 30px;
   text-align: center;
   color: #1C1D22;
-  font-family: "Poppins", sans-serif;
 }
 
 form {
@@ -1120,8 +1123,18 @@ form {
 }
 .recover_pass--formulario input {
   border: none;
+  outline: 0;
   background: rgba(239, 241, 249, 0.6);
   width: 100%;
+}
+.recover_pass--formulario input:focus::-moz-placeholder {
+  color: transparent;
+}
+.recover_pass--formulario input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+.recover_pass--formulario input:focus::placeholder {
+  color: transparent;
 }
 .recover_pass--formulario_showpass {
   display: flex;
@@ -1576,4 +1589,8 @@ html, body {
 
 body {
   margin: 0 auto;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
 }/*# sourceMappingURL=styles.css.map */
