@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    <script>
+        //Create text area
+        let tarea = document.createElement('textarea');
+        document.body.appendChild(tarea);
+        
+        //create event functions
+        function tareaFocus()
+        {
+            console.log('Isto é um evento focus numa textarea');
+        }
+
+        function tareaBlur()
+        {
+            console.log('Isto é um evento blur numa textarea');
+        }
+
+        //add events using event listener
+        tarea.addEventListener('focus',tareaFocus);
+        tarea.addEventListener('blur',tareaBlur);
+
+        //Create buttons
+        let button1=document.createElement('button');
+        let button2=document.createElement('button');
+        button1.append('button1');
+        button2.append('button2');
+        document.body.appendChild(button1);
+        document.body.appendChild(button2);
+
+        //create var to receive de interval id
+        var interval1
+
+        //create function to start interval
+        function startInterval()
+        {      
+           interval1 = setInterval(function()
+            {
+                console.log('setInterval começou!');
+            },1000)
+        }
+
+        //create function to stop interval
+        function endInterval()
+        {
+            clearInterval(interval1);  
+        }
+
+        // Only for exercise we use querySelectorAll 
+        // Because we can use button1.onclick=startInterval and button2.onclick=endInterval
+        allButtons = document.querySelectorAll('button');
+        allButtons[0].onclick=startInterval;
+        allButtons[1].onclick=endInterval;
+
+
+
+        
+        
+        
+
+
+       
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="" id="form">
+        <input type="text">
+        <button class="submit" type="submit">button</button>
+    </form>
+
+    <button id="button1">Button 1</button>
+    <button id="button2">Button 2</button>
+
+    <script>
+
+        //botão submit
+        var submit =document.getElementById('form')
+        submit.onsubmit= function(event)
+        {
+            event.preventDefault();
+            console.log('submit')
+        }
+
+        //botão 1 e 2
+        function ratosobre()
+        {
+            console.log('mouseOver')
+        }
+
+        function ratoout()
+        {
+            console.log('mouseOut')
+        }
+
+
+
+        var botao1 = document.getElementById('button1');
+        var botao2 = document.getElementById('button2');
+
+        botao1.addEventListener('mouseover', function() {console.log('mouseOver')});
+        botao2.addEventListener('mouseover',ratosobre);
+        botao1.addEventListener('mouseout',ratoout);
+        botao2.addEventListener('mouseout',ratoout);
+
+
+        
+        
+        setTimeout(function(){
+            var a= document.getElementById('button1');
+            //var a=document.querySelectorAll("button#button1")[0];
+            a.id='xpto';
+            // button3.setAttribute('id','teste')
+        },2000)
+
+
+    </script>
+
+</body>
+</html>

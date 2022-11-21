@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var x
+        var request = new XMLHttpRequest();
+        
+        console.log(request.readyState)
+
+        request.open('GET','https://dog.ceo/api/breeds/list/all');
+        request.responseType="json"
+        
+        console.log(request.readyState)
+
+
+        
+        
+        request.onload =function(){ 
+            
+            //x = JSON.parse(request.response);
+           
+            //console.log(x["message"])
+            console.log(request.response)
+            console.log(request.status)
+
+            return request.status
+        
+        
+        
+        }
+            
+
+        request.onerror=function(){ console.log('C_falha')}
+
+        request.onprogress=function(){ console.log('C_progressao')}
+
+        request.onabort=function(){ console.log('abort')}
+
+        request.onreadystatechange = function() {
+            console.log(request.readyState)
+        }
+       
+
+
+        request.send();
+
+       // console.log(request.onload())
+        //request.abort();
+
+       //request.onload = ()=>{ 
+        //console.log(JSON.parse(request.response)); 
+       // } 
+    
+
+
+
+        
+    </script>
+    
+</body>
+</html>

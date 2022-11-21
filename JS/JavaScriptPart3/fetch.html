@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+
+    <script>
+
+    var request = fetch('https://zoo-animal-api.herokuapp.com/animals/rand/4')
+   
+    var resposta = request.then(function(response)
+    {
+        return response.json();
+    });
+
+    var resultado = resposta.then(function(data)
+    {
+        console.log(data);
+    });
+
+//ou pode ser assim
+
+    fetch('https://zoo-animal-api.herokuapp.com/animals/rand/4')
+    .then(function(response)
+    {
+        return response.json();
+    })
+    .then(function(data)
+    {
+        console.log(data)
+    });
+
+//paremetros este só para mostrar
+
+fetch('https://zoo-animal-api.herokuapp.com/animals/rand/4', 
+{ 
+    method:'POST',
+    body: {user : 'isto', pass:'tb isto'}
+    // body: JSON.stringify(data)
+})
+    .then(function(response)
+    {
+        return response.json();
+    })
+    .then(function(data)
+    {
+        console.log(data)
+    });
+
+
+    
+   
+
+ 
+
+  
+    </script>
+    
+</body>
+</html>

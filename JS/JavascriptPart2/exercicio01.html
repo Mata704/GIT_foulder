@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //Create div
+        let newDiv = document.createElement('div');
+        //Create div Atributes
+        newDiv.setAttribute('id','container');
+        newDiv.setAttribute('class','exercicio');
+        //Create span
+        let newSpan = document.createElement('span');
+        //Create span Atributes
+        newSpan.setAttribute('class','exercicio');
+        newSpan.append("Isto é o conteúdo da span"); 
+        //Add the span to the div
+        newDiv.appendChild(newSpan);
+        //show Div
+        document.body.appendChild(newDiv);
+
+        //Show all elements with class="exercicio"
+        console.log(document.querySelectorAll('.exercicio'));
+
+        //only for exercise we use getElementById
+        //Because we can use newDiv var to append buttons
+        let getdiv = document.getElementById('container'); 
+        //Create Button
+        let b1 = document.createElement('button');
+        let b2 = document.createElement('button');
+        //to turn buttons big, we added text
+        b1.append('button1');
+        b2.append('button2');
+        //Add buttons to bottom and top of the div
+        getdiv.prepend(b1);
+        getdiv.appendChild(b2);
+        
+        function timeOutMsg()
+        {
+            setTimeout(function()
+            {
+                console.log("o setTimeout começou!")
+            },2000)
+        }
+        //Add div click event
+        //Several methods can be used
+        //getdiv.addEventListener('click',timeOutMsg);
+        //getdiv.setAttribute('onclick','timeOutMsg()');
+        getdiv.onclick=timeOutMsg;
+
+
+
+
+
+        
+
+
+
+
+
+ 
+
+
+    </script>
+    
+</body>
+</html>

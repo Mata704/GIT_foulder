@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+    var promise1 = Promise.resolve('promise1111');
+    var promise2 = Promise.reject('promise222');
+    var promise3 = Promise.resolve('promise333');
+
+    var promiseDeTodas= Promise.all([promise1,promise2,promise3]);
+
+    promiseDeTodas.then(function(resultado){console.log('bem:',resultado)})
+    promiseDeTodas.catch(function(resultado){console.log('Mal:',resultado)})
+
+
+
+    </script>
+
+    
+</body>
+</html>

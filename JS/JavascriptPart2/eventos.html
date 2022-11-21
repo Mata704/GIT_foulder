@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="myFunction()">
+
+    <button onclick="mensagem()">Botão</button>
+
+    <form action="" onreset="limpar()" onsubmit="subm()">
+        <input type="text" placeholder="campo com onchange" onchange="changes()">
+        <input type="text" onfocus="ratofocus()" onblur="ratoblur()">
+        
+        <button type="submit"></button>
+        <button type="reset" ></button>
+    </form>
+
+    <button onmouseover="ratoOver()" onmouseout="ratoOut()" >mouse</button>
+
+    <script>
+        function mensagem()
+        {
+           //console.log("teste");
+
+           document.body.style.background = 'red';
+        }
+
+        function myFunction() {
+            alert("Page is loaded");
+        }
+
+        function changes()
+        {
+            console.log("you are writing");
+        }
+
+        function limpar()
+        {
+            console.log("clean data");
+        }
+
+        function subm()
+        {
+            console.log("submetido");
+        }
+
+        function subm()
+        {
+            console.log("submetido");
+        }
+
+        function ratoOver()
+        {
+            console.log("Over")
+        }
+
+        function ratoOver()
+        {
+            console.log("Over")
+        }
+
+        function ratoOut()
+        {
+            console.log("Out")
+        }
+
+        function ratofocus()
+        {
+            console.log("onfocus")
+        }
+
+        function ratofocus()
+        {
+            console.log("onfocus")
+        }
+
+        function ratoblur()
+        {
+            console.log("onblur")
+
+        }
+
+
+    </script>
+
+</body>
+</html>

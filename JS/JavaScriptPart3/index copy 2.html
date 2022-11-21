@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script>
+
+        function clickMediumImage(image)
+        {
+            let b1=document.getElementById('modal');
+            let b2=document.getElementById('modaldiv');
+            b1.setAttribute('src',image);
+            b1.classList.remove('displaynone');
+            b2.classList.remove('displaynone');  
+            //window.scrollTo(0, 0);
+            let b3=document.getElementById('button2');
+            b3.classList.remove('displaynone');
+
+            b3.onclick= function() 
+            { 
+                let modDivnone = document.getElementById('modaldiv');
+                let modImage = document.getElementById('modal');
+                let modbutton = document.getElementById('button2');
+                modDivnone.classList.add('displaynone'); 
+                modImage.classList.add('displaynone');
+                modbutton.classList.add('displaynone');      
+
+            }
+        }
+
+        function clickSmallImage(info)
+        {
+            
+            //Get the boxs
+            let imageMediumBox=document.getElementById('mediumImage');
+            let a1=document.getElementById('title');
+            let a2=document.getElementById('rating');
+            let a3=document.getElementById('aired');
+            let a4=document.getElementById('genres');
+
+            //calc string genres
+            let strGenres=[];
+            for (let i=0;i<info.genres.length;i++)
+            {   
+                strGenres.push(info.genres[i].name);
+            }
+
+            //append the new text
+            imageMediumBox.setAttribute('src',info.images.jpg.large_image_url);
+            a1.replaceChildren(info.title);
+            a2.replaceChildren(info.rating);
+            a3.replaceChildren(info.aired.from.slice(0,10));
+            a4.replaceChildren(strGenres.join(' / '));
+
+            //replaceChildren
+
+            //add image event
+            imageMediumBox.onclick = function() {clickMediumImage(info.images.jpg.large_image_url)};
+
+            //change styles
+            let container = document.getElementById('container'); 
+            container.classList.add('containerSmall');
+
+            let infoContainer = document.getElementById('info');
+            infoContainer.classList.remove('displaynone');
+
+            let button1 = document.getElementById('button1');
+            button1.classList.remove('displaynone');
+
+            //add button event
+            button1.onclick = function() {
+                
+                containerDefault = document.getElementById('container');
+                containerDefault.classList.remove('containerSmall');
+
+                let infoContainerDefault = document.getElementById('info');
+                infoContainerDefault.classList.add('displaynone');
+
+            }
+        }
+        
+        
+        function createElementsFromMediumImg()
+        {
+            let divshow= document.createElement('div');
+            divshow.classList.add('nonediv');
+            divshow.classList.add('displaynone');
+            divshow.setAttribute('id','info');
+            
+            let imageMedium = document.createElement('img');
+            imageMedium.setAttribute('id','mediumImage');
+            imageMedium.setAttribute('src','');
+            let name= document.createElement('p');
+            name.setAttribute('id','title');
+            let rating= document.createElement('p');
+            rating.setAttribute('id','rating');
+            let aired= document.createElement('p');
+            aired.setAttribute('id','aired');
+            let genres= document.createElement('p');
+            genres.setAttribute('id','genres');
+            let button1=document.createElement('button');
+            button1.setAttribute('id','button1');
+            button1.classList.add('button1');
+            button1.classList.add('displaynone');
+            button1.append("Close");
+
+            divshow.append(imageMedium);
+            divshow.append(name);
+            divshow.append(rating);
+            divshow.append(aired);
+            divshow.append(genres);
+            divshow.append(button1);
+
+            return divshow
+     
+        }
+
+        function createFooter()
+        {
+            //Create Footer elements
+            let footer=document.createElement('footer');
+            let footerYear=document.createElement('p');
+
+            //Append all info
+            const date = new Date();
+            footerYear.append(date.getFullYear());
+            footerYear.append(' ©');
+            footerYear.append(' Pedro Mata');
+           
+            footer.append(footerYear);
+            document.body.appendChild(footer);
+        }
+
+        function createModal()
+        {
+            //Create Modal elements
+            let modaldiv=document.createElement('div');
+            modaldiv.classList.add('modal');
+            modaldiv.classList.add('displaynone');
+            modaldiv.setAttribute('id','modaldiv');
+
+            let imagemodal=document.createElement('img');
+            imagemodal.setAttribute('id','modal');
+            imagemodal.classList.add('displaynone');
+
+            let buttonModal=document.createElement('button');
+            buttonModal.setAttribute('id','button2');
+            buttonModal.classList.add('button2');
+            buttonModal.classList.add('displaynone');
+            buttonModal.append("Close");
+
+            modaldiv.append(imagemodal);
+            modaldiv.append(buttonModal);
+
+            document.body.appendChild(modaldiv);
+        }
+
+
+        function createSlide(allImages)
+        {
+            //Create all carrocel
+
+            let divslide = document.createElement('div');
+            divslide.classList.add('slide');
+            
+            let newbuttonback = document.createElement('button');
+            newbuttonback.classList.add('button1');
+            newbuttonback.append('back');
+
+            let divimageslide= document.createElement('div');
+            divimageslide.classList.add('slideimagediv');
+
+            let newimgslide = document.createElement('img');
+            newimgslide.setAttribute('src',allImages[0]);
+            newimgslide.setAttribute('id','slide');
+
+            
+            let newbuttonfront = document.createElement('button');
+            newbuttonfront.classList.add('button1');
+            newbuttonfront.append('front');
+
+            divimageslide.append(newimgslide);
+           
+            divslide.append(newbuttonback);
+            divslide.append(divimageslide);
+            divslide.append(newbuttonfront);
+
+            var arrayPosition=0;
+
+            newbuttonback.onclick = function() 
+            {
+
+                arrayPosition=arrayPosition-1;
+                if(arrayPosition<0)
+                {
+                    arrayPosition=  allImages.length-1;
+                }
+                let slideimage=document.getElementById('slide');
+                slideimage.setAttribute('src',allImages[arrayPosition]); 
+            }
+
+            newbuttonfront.onclick = function() 
+            {
+
+                arrayPosition=arrayPosition+1;
+                if(arrayPosition>=allImages.length)
+                {
+                    arrayPosition= 0;
+                }
+                let slideimage=document.getElementById('slide');
+                slideimage.setAttribute('src',allImages[arrayPosition]); 
+            }
+
+            document.body.appendChild(divslide);
+
+        }
+
+        function createBlock(apiInfo)
+        {
+            //Create block
+            let divblock = document.createElement('div');
+            divblock.classList.add('block');
+
+            //Create grid
+            let divcontainer = document.createElement('div');
+            divcontainer.classList.add('container');
+            divcontainer.setAttribute('id','container');
+            let divrow = document.createElement('row');
+            divrow.classList.add('row');
+
+            //create right div info
+            let infotab = createElementsFromMediumImg();
+
+            // create carrocel array
+            let imagesarray =[];
+
+            //Create all blocks and get image carrocel
+            for (let i=0; i<apiInfo.length;i++)
+            {
+                let newimg = document.createElement('img');
+                newimg.setAttribute('src',apiInfo[i].images.jpg.image_url);
+                newimg.classList.add('imagesize');
+                let newtext= document.createElement('p');
+                newtext.append(apiInfo[i].title);
+                newtext.classList.add('psize');
+                
+                let div3 = document.createElement('div');
+                div3.classList.add('col-3');
+                div3.append(newimg);
+                div3.append(newtext);
+
+                //add event listner
+                div3.onclick = function() {clickSmallImage(apiInfo[i])};
+                divrow.append(div3);
+
+                //Create images array
+                imagesarray.push(apiInfo[i].images.jpg.large_image_url);
+            }
+
+            //Create Structure
+            divcontainer.append(divrow);
+            divblock.append(divcontainer);
+            divblock.append(infotab);
+            document.body.appendChild(divblock);
+
+            return imagesarray
+        }
+
+        
+        function createstructure(apiAllInfo)
+        {
+            //Create grid and hidden block
+            //Return a image array
+            let arrayOfImages = createBlock(apiAllInfo);
+            
+            //Create other modules
+            createModal();
+            createSlide(arrayOfImages);
+            createFooter();
+
+        }
+
+
+
+        fetch('https://api.jikan.moe/v4/top/anime')
+            .then(function(response)
+            {
+                return response.json();
+            })
+            .then(function(data)
+            {
+                //console.log(data.data);
+                createstructure(data.data);   
+            })
+            .catch(function(error)
+            {
+                console.log('API error: '+ error);
+                
+            }); 
+    </script>   
+</body>
+</html>

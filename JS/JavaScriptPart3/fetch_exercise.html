@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+
+    <script>
+
+
+//funcao para criar os elementos
+function createImage(src,nome)
+        {
+            let newimg = document.createElement('img');
+            newimg.setAttribute('src',src);
+            newimg.setAttribute('style','width:400px;height:400px')
+            document.body.appendChild(newimg);
+            let newtext= document.createElement('p');
+            newtext.append(nome);
+            document.body.appendChild(newtext);
+        }
+
+
+
+fetch('https://zoo-animal-api.herokuapp.com/animals/rand/4')
+.then(function(response)
+{
+    return response.json();
+})
+.then(function(data)
+{
+    for(let i=0;i<data.length;i++)
+        {
+            createImage(data[i].image_link,data[i].name)
+        }     
+});
+
+
+   
+  
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+
+    <script>
+
+        //funcao com default
+        function xpto(a=3,b=4)
+        { 
+            return a*b;
+        }
+        console.log(xpto(undefined,2));
+
+
+        //isto é um concat
+        const nt = "notas";
+        let x = `esta frase é para mostrar as  ${nt}`;
+        console.log(x);
+
+        //isto é um if
+        const resultado =5>4? '5 é maior k quatro' : 'falso';
+        console.log(resultado);
+
+        //Array
+
+        let numbers = [1,4,9];
+         numbers.forEach(function(numero) {console.log(numero)})
+
+
+        //o map com o array retorna outro array
+
+        let vals=numbers.map((numero,posicao) => {return numero*2})
+        console.log(vals);
+
+
+        //filter
+
+        let result = numbers.filter((num)=> (num%2)>0);
+        console.log(result)
+
+        //find só devolve o 1
+
+        result = numbers.find((num)=> (num%2)>0);
+        console.log(result)
+
+        //Reduce
+        // inicia a 4 e acumula
+        const soma = numbers.reduce((acumulador, currentval) => acumulador+currentval,4);
+        console.log(soma);
+
+
+
+
+
+
+
+        
+
+
+   
+  
+    </script>
+    
+</body>
+</html>

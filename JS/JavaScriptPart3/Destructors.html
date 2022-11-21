@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+
+    <script>
+
+      //destruction object
+
+      const pessoa ={
+        nome: "vitor",
+        idade: 37,
+        profissao: 'frontend'
+      }
+
+      const {nome,idade} =pessoa;
+      const {profissao: proff} =pessoa;
+      console.log(nome)
+      console.log(idade)
+      console.log(proff)
+
+
+      //destruction array
+      const num =[1,3,5,7]
+      
+      const [primeiro]=num
+      console.log(primeiro)
+
+      const [prim,segundo]=num
+      console.log(primeiro+' '+segundo)
+
+      const [p,s,...resto]=num
+      console.log(resto)
+
+
+
+   
+  
+    </script>
+    
+</body>
+</html>

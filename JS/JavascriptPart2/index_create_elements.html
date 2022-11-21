@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //Cria elemento div
+        let newDiv = document.createElement('div');
+        
+        //Cria 1º p
+        let ptext = document.createElement('p');
+        ptext.append("Isto é apenas para um exercício");
+        ptext.append(" muito difícil;");
+        
+        //Cria 2º p
+        // let ptext2 = document.createElement('p');
+        // ptext2.append("muito difícil;"); 
+        
+        //adiciona o 1º e 2º <p> à nova div
+        newDiv.appendChild(ptext);
+        //newDiv.appendChild(ptext2);
+        
+        //adiciona a div ao body
+        document.body.appendChild(newDiv);
+    </script>
+
+</body>
+</html>
