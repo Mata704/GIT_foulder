@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open index copy 2.html",
-            "file": "d:\\GIT_folder\\JS\\JavaScriptPart3\\index copy 2.html"
+            "file": "d:\\GIT_folder\\React\\index.html"
         }
     ]
 }
